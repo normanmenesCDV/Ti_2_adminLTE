@@ -32,8 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $errors[] = "Zatwierdź regulamin";
 
     if (!empty($errors)){
-        print_r($errors);
-        echo "test: ".$errors[0];
+        // print_r($errors);
+        // echo "test: ".$errors[0];
         //print_r($errors);
         //$_SESSION['error_message'] = implode(", ", $errors);
         $_SESSION['error_message'] = implode("<br>", $errors);
